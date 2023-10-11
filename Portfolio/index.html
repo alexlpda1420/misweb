@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexis Roldan - Portfolio</title>
+   <link rel="shortcut icon" href="./assets/images/portfolio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#yo">Alexis Roldan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerdemi">ACERCA DE MÍ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="yo">
+      <img src="assets/images/alexis.PNG" alt="MI FOTO" />
+      <h1>Alexis Roldan</h1>
+      <p>Administrador de Infraestructura IT - DevOps - Desarrollador Front End</p>
+    </div>
+
+    <div class="container" id="portfolio">
+        <h2 class="display-6 fw-bold my-6">Proyectos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2 mb-2">
+          <div class="portfolio-item card">
+            <img src="assets/images/colorgame.png" class="card-img-top" alt="Color Game" />
+          </div>
+          <div class="card-body">
+            <p class="card-text texto-personalizado">¿Que color es el que figura en el texto?</p>
+            <a href="https://p5-colorgame-alexisroldan.netlify.app/" class="btn btn-outline-primary card-title texto-personalizado" target="_blank">COLOR GAME</a>
+        </div>
+        </div>
+        <div class="col-md-2 mb-2">
+          <div class="portfolio-item card">
+            <img src="assets/images/weatherchannel.png" class="card-img-top" alt="Weather Channel" />
+          </div>
+          <div class="card-body">
+            <p class="card-text texto-personalizado">¿Qué temperatura hace en tú ciudad?</p>
+            <a href="https://p5-weatherchannel-alexisroldan.netlify.app/" class="btn btn-outline-primary card-title texto-personalizado" target="_blank">WEATHER CHANNEL</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="acerdemi">
+      <div class="section">
+        <h2>Acerca de Mí</h2>
+        <hr />
+        <p class="lead">    
+          Mi nombre es Alexis Roldan soy Administrador de Infraestructura IT con
+          mas de 7 años de experiencia en el puesto trabajando con las ultimas
+          tecnologías on-premisse y cloud, también actualmente estoy estudiando en distintas ramas de la informática
+          como lo son el area de devOps, seguridad y desarrollo. <hr>
+          Cuento con habilidades en HTML, CSS y JavaScript, 
+          Conocimientos avanzados en Sistemas Operativos Linux, Windows, 
+          Muy buen manejo de tecnologías como Docker, Kubernetes
+          Conocimientos avanzados en AWS Cloud, Azure, Huawei
+        </p>
+      </div>
+    </div>
+    <div class="container" id="contacto">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="text-center">Contáctame</h2>
+          <form action="https://getform.io/f/bfedae06-4557-400c-a01d-eeb854c26daa" method="POST" id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Número de Teléfono:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                name="telefono"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="floating-whatsapp">
+      <a href="https://api.whatsapp.com/send?phone=+541149176908&text=Hola%20vi%20tu%20sitio%20en%20P5%20me%20interesa%20Contactarte" target="_blank" class="btn btn-success">
+          <i class="fab fa-whatsapp"></i> ¡Contactarme por WhatsApp!</a>
+  </div>
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <strong><p>&copy;Copyright - Alexis Roldan - 2023</p></strong>
+          </div>
+          <div class="col-md-6 text-right">
+            <a
+              href="https://www.facebook.com/alexlpda1420"
+              target="_blank"
+              class="text-light mx-2"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://twitter.com/aeroldan7"
+              target="_blank"
+              class="text-light mx-2"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/alexlpda1420/"
+              target="_blank"
+              class="text-light mx-2"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/alexis-esteban-roldan/"
+              target="_blank"
+              class="text-light mx-2"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

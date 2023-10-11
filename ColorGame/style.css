@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #232323;
+    color: white;
+    background-image: url(assets/images/fondo.avif)
+  }
+  
+  h1 {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    font-family: 'fuente', sans-serif;
+    font-weight: bold;
+    border: 2px solid #000; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #stripe {
+    height: 40px;
+    margin-bottom: 20px;
+    font-family: 'fuente', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #adaaaa; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:hover {
+    background-color: #447dce;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .square {
+    width: 100%;
+    padding-bottom: 100%;
+    background: #232323;
+    border: 1px solid #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #colorDisplay {
+    font-size: 2rem;
+    border: 1px solid #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #232323;
+  }
